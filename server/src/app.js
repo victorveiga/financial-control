@@ -6,6 +6,10 @@ const cors    = require('cors');
 // internas
 const routes  = require('./routes')
 
+// Conectar a base de dados
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/teste', {useNewUrlParser: true});
+
 app.use(cors());
 app.use((req,res,next)=>{
     res.header("Access-Control-Allow-Origin", "*");
