@@ -1,4 +1,4 @@
-class View {
+class Controller {
     constructor(schema){
         this.Schema = schema
     }
@@ -55,4 +55,4 @@ class View {
 
 }
 
-module.exports = View
+module.exports = Controller
