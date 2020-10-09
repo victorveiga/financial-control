@@ -1,10 +1,10 @@
-const User = require('../schemas/User.schema')
-const View = require('./View')
+const Categoria = require('../models/category.model')
+const Controller = require('./controller')
 
-class UserView extends View {
+class CategoryController extends Controller {
 
     constructor(){
-        super(User)
+        super(Categoria)
     }
 
     store(req,res){ return super.store(req,res) }
@@ -14,4 +14,4 @@ class UserView extends View {
     delete(req, res){ return super.delete(req, res) }
 }
 
-module.exports = new UserView();
+module.exports = new CategoryController();
